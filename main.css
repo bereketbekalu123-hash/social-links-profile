@@ -86,12 +86,8 @@ p{
     background: var(--green);
     color:var(--black3);
 }
-.link:hover pointer{
-    cursor: pointer;
-    color:black
-}
 @media (prefers-reduced-motion:reduce){
-    *{
+    *,*::after,*::before{
     transition-duration: 0.01ms;
     animation-duration: 0.01ms;
     animation-iteration-count: 1;
