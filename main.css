@@ -1,0 +1,103 @@
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 100 900;
+}
+:root{
+    --black:hsl(0, 0%, 8%);
+    --black2:hsl(0, 0%, 12%);
+    --black3:hsl(0, 0%, 20%);
+    --green:hsl(75, 94%, 57%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "inter",'Times New Roman', Times, serif;
+    font-size: clamp(.8rem, .7rem + 3vmax , .9rem);
+    background: var(--black);
+}
+p{
+    font-size: .85rem;
+}
+.container{
+    margin:0 auto;
+    width: 90vw;
+    min-height: 100vh;
+    /* outline: 2px solid red ; */
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    /* outline: 2px solid purple; */
+    padding:1.7rem;
+    width: 100%;
+    max-width: 21rem;
+    background:var(--black2);
+    color: white;
+    border-radius: 1rem;
+}
+.profile,.social-links{
+    text-align: center;
+}
+.profile__img{
+    border-radius: 50%;
+    width: 5rem;
+    margin-bottom:1.5rem;
+}
+.profile__name{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: .3rem;
+    font-weight:600;
+}
+.profile__address{
+    font-size: .9rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color:var(--green);
+    font-weight: 600;
+}
+
+.social-links{
+    margin-top: 1.5rem;
+}
+
+.link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background:var(--black3);
+    padding:.8rem;
+    border-radius: .6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+.link + .link{
+    margin-top: .9rem;
+}
+.link:hover{
+    background: var(--green);
+    color:var(--black3);
+}
+.link:hover pointer{
+    cursor: pointer;
+    color:black
+}
+@media (prefers-reduced-motion:reduce){
+    *{
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    }
+}
+
+
+.attribution { font-size: 0.6875rem; text-align: center; color: white;}
+    .attribution a { color: hsl(228, 45%, 44%); }
